@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import ReactDOM from 'react-dom';
+import Home from "../Pages/Home";
+import About from "../Pages/About";
+import Authors from "../Pages/Authors";
+
 import {
   Button,
   Container,
@@ -9,22 +14,18 @@ import {
 } from "react-bootstrap";
 
 import logo from "./logo192.png";
-import { BrowserRouter, Route, Routes, Link} from "react-router-dom";
-
-import Home from "../Pages/Home";
-import Authors from "../Pages/Authors";
-import About from "../Pages/About";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+} from "react-router-dom";
 
 class Header extends Component {
   render() {
     return (
       <>
-        <Navbar
-          collapseOnSelect
-          expand="md"
-          bg="dark"
-          variant="dark"
-        >
+        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand href="/">
               <img
@@ -53,6 +54,14 @@ class Header extends Component {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/authors" component={Authors} />
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </Router>
 
       </>
     );

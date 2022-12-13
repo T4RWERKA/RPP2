@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import CarouselBox from '../Components/CarouselBox';
-import Carousel from 'react-bootstrap/Carousel';
+import React, { Component } from "react";
+import CarouselBox from "../Components/CarouselBox";
 
 class Home extends Component {
-    render() {
-        return (
-            <CarouselBox/>
-        );
-    }
+  render() {
+    return (
+      <>
+        <CarouselBox/>
+      </>
+    );
+  }
 }
 export default Home;
