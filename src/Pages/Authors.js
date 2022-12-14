@@ -8,6 +8,7 @@ import Brovka from "./Auth/Brovka"
 import Boroda from "./Auth/Boroda"
 import Adam from "./Auth/Adam"
 
+
 import Globus from "../assets/Globus.jpg"
 import egor from "../assets/Boroda.jpg"
 import Nil from '../assets/Nil1.jpg'
@@ -17,6 +18,7 @@ import Mik from '../assets/Nikolaj_Metlitskij.jpg'
 class Authors extends Component {
     render() {
         return (
+            <>
             <Container className="text-center ">
             <Row className = "w-100  row justify-content-md-center">
                 <Col className = "gy-5">
@@ -89,6 +91,7 @@ class Authors extends Component {
                 </Col>
             </Row>
         </Container>
+        </>
         );
     }
 }
