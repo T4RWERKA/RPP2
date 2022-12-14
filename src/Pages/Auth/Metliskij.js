@@ -5,7 +5,7 @@ class Metliskij extends Component {
         return (
             <>
                 <div>
-                    Mikola
+                    Николай Метлицкий
                 </div>
             </>
         );

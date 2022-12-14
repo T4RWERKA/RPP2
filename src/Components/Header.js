@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import About from "../Pages/About";
 import Home from "../Pages/Home";
 import Authors from "../Pages/Authors";
+import Metliskij from "../Pages/Auth/Metliskij";
+import Hilevich from "../Pages/Auth/Hilevich";
+import Brovka from "../Pages/Auth/Brovka";
+import Borodulin from "../Pages/Auth/Borodulin";
+import Adam from "../Pages/Auth/Adam";
 
 import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
@@ -21,6 +26,7 @@ import {
 // import Dropdown from "./Dropdown";
 
 import logo from "../assets/BookLogo.webp";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -93,15 +99,22 @@ const Header = () => {
         </Container>
       </Navbar>
 
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/authors" component={Authors} />
-          <Route exact path="/about" component={About} />
-        </Switch>
-      </Router>
-    </>
-  );
-}
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/authors" component={Authors} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/authors/hilevich" component={Hilevich} />
+            <Route exact path="/authors/metliskij" component={Metliskij} />
+            <Route exact path="/authors/brovka" component={Brovka} />
+            <Route exact path="/authors/borodulin" component={Borodulin} />
+            <Route exact path="/authors/globus" component={Adam} />
+          </Switch>
+        </Router>
+
+      </>
+    );
+  }
+
 
 export default Header;
