@@ -5,7 +5,7 @@ class Brovka extends Component {
         return (
             <>
                 <div>
-                    Mikola
+                Пётр Бровка
                 </div>
             </>
         );

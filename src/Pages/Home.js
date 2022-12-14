@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Card, CardGroup, Container, Figure } from "react-bootstrap";
+import { Button, Card, Container, Figure } from "react-bootstrap";
 import CarouselBox from "../Components/CarouselBox";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -50,8 +50,8 @@ class Home extends Component {
         <Container className="text-center">
             <h2 className="text-center m-4">Наша команда</h2>
             <Row>
-                <Col>
-                    <Card border="primary"> 
+                <div id="authors_grid">
+                    <Card border="dark"> 
                         <Card.Img
                             variant="top"
                             src={evgexaxzc}
@@ -60,13 +60,11 @@ class Home extends Component {
                         <Card.Body>
                             <Card.Title>evgexaxzc</Card.Title>
                             <Card.Text style={{fontSize:"20px"}}>Евгений Митюля</Card.Text>
-                            <Button href="https://github.com/evgexaxzc" variant="outline-primary">Об участнике</Button>
+                            <Button href="https://github.com/evgexaxzc" variant="outline-dark">Об участнике</Button>
                         </Card.Body>
                     </Card>
-                </Col>
 
-                <Col>
-                    <Card border="primary">
+                    <Card border="dark">
                         <Card.Img
                             variant="top"
                             src={MenterCOX}
@@ -75,13 +73,11 @@ class Home extends Component {
                         <Card.Body>
                             <Card.Title>MenterCOX</Card.Title>
                             <Card.Text style={{fontSize:"20px"}}>Даниил Ягниш</Card.Text>
-                            <Button href="https://github.com/MenterCOX" variant="outline-primary">Об участнике</Button>
+                            <Button href="https://github.com/MenterCOX" variant="outline-dark">Об участнике</Button>
                         </Card.Body>
                     </Card>
-                </Col>
 
-                <Col>
-                    <Card border="primary">
+                    <Card border="dark">
                         <Card.Img
                             variant="top"
                             alt="T4WERKA"
@@ -90,10 +86,10 @@ class Home extends Component {
                         <Card.Body>
                             <Card.Title>T4WERKA</Card.Title>
                             <Card.Text style={{fontSize:"20px"}}>Денис Шафаренко</Card.Text>
-                            <Button href="https://github.com/T4RWERKA" variant="outline-primary">Об участнике</Button>
+                            <Button href="https://github.com/T4RWERKA" variant="outline-dark">Об участнике</Button>
                         </Card.Body>
                     </Card>
-                </Col>
+                </div>
             </Row>    
         </Container>
         

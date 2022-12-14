@@ -26,6 +26,44 @@ code {
   font-size: 17px;
 }
 
+#authors_grid{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+#authors_grid .card{
+  margin: 1%;
+  flex-basis: 31%;
+} 
+
+#carousel img{
+  max-width: 100%;
+  height: 1000px;
+}
+
+@media all and (max-width: 800px) {
+  #carousel img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+/* Маленькие экраны */
+@media all and (max-width: 500px) {
+  #carousel img{
+    max-width: 100%;
+    height: 300px;
+  }
+
+  #authors_grid {
+    flex-direction: column;
+  }
+  
+}
+
+
 .person_about{
   font-size: 20px;
   margin-left: 100px;

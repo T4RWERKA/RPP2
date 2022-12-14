@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-class Boroda extends Component {
+class Borodulin extends Component {
     render() {
         return (
             <>
                 <div>
-                    Mikola
+                    Егор Барадулин
                 </div>
             </>
         );
     }
 }
 
-export default Boroda;
+export default Borodulin;

@@ -5,7 +5,7 @@ class Adam extends Component {
         return (
             <>
                 <div>
-                    Mikola
+                    Адам Глобус
                 </div>
             </>
         );
