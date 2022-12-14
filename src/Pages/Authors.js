@@ -14,7 +14,7 @@ class Authors extends Component {
     return (
       <>
         <Container className="text-center ">
-          <div id="authors_grid">
+          <div id="authors_flex">
             <Card border="dark">
               <Card.Img variant="top" src={Mik} alt="Mikola" />
               <Card.Body>

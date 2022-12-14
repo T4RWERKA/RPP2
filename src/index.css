@@ -12,27 +12,47 @@ code {
     monospace;
 }
 
+h2{
+  color:black;
+}
 .card{
   padding: 10px;
   margin-bottom: 100px;
 }
 
+.person_about{
+  font-size: 20px;
+  align-items: left;
+  width: 70%;
+}
+
+.person_card{
+  width: 30%;
+}
+
 #person{
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: center;
 }
 
 #person p{
   font-size: 17px;
 }
 
-#authors_grid{
+#person a{
+  font-size: 19px;
+}
+
+
+#authors_flex{
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
 }
 
-#authors_grid .card{
+#authors_flex .card{
   margin: 1%;
   flex-basis: 31%;
 } 
@@ -57,16 +77,12 @@ code {
     height: 300px;
   }
 
-  #authors_grid {
+  #authors_flex{
+    flex-direction: column;
+  }
+
+  #person{
     flex-direction: column;
   }
   
-}
-
-
-.person_about{
-  font-size: 20px;
-  margin-left: 100px;
-}
-.person_card{
 }
