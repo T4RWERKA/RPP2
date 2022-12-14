@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Button, Card, CardGroup, Container } from "react-bootstrap";
 import CarouselBox from "../Components/CarouselBox";
-import { MDBBtn, MDBIcon} from 'mdb-react-ui-kit'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 

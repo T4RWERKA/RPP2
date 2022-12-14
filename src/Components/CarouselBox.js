@@ -16,6 +16,13 @@ class CarouselBox extends Component {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
+          <img height={840} className="d-block w-100" src={Mik} alt="Mik" />
+          <Carousel.Caption>
+            <h3>Николай Метлицкий</h3>
+            <p>Белорусский поэт, переводчик, публицист, журналист. </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
           <img height={840} className="d-block w-100" src={Mik1} alt="Mik1" />
           <Carousel.Caption>
             <h3>Няправільныя санкі</h3>
