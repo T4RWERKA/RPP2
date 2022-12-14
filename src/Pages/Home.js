@@ -5,9 +5,11 @@ class Home extends Component {
   render() {
     return (
       <>
+    
         <CarouselBox/>
       </>
     );
   }
+ 
 }
 export default Home;
