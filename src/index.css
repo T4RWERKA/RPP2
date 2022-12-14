@@ -32,3 +32,15 @@ code {
 }
 .person_card{
 }
+
+.dropdown {
+  padding-left: 20px;
+}
+
+.who-is-this {
+  display: flex;
+}
+
+.list-of-works {
+  column-count: 3
+}

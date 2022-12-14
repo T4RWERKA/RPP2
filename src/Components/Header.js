@@ -70,7 +70,7 @@ const Header = () => {
             <Nav className="me-auto">
               <Nav.Link href="/"> {t('Home')} </Nav.Link>
               <Nav.Link href="/authors"> {t('Authors')} </Nav.Link>
-              <Nav.Link href="#about-us">{t('About us')}</Nav.Link>
+              <Nav.Link href="/#about-us">{t('About us')}</Nav.Link>
             </Nav>
             <Form inline>
               <FormControl
