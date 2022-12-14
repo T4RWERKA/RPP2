@@ -13,6 +13,7 @@ class Home extends Component {
   render() {
     return (
       <>
+    
         <CarouselBox/>
         <Container className="text-center">
             <h2 className="text-center m-4">Our team</h2>
@@ -67,5 +68,6 @@ class Home extends Component {
       </>
     );
   }
+ 
 }
 export default Home;

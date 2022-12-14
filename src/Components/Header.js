@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
-import Home from "../Pages/Home";
 import About from "../Pages/About";
+import Home from "../Pages/Home";
 import Authors from "../Pages/Authors";
 
 import {
@@ -13,7 +13,7 @@ import {
   Navbar,
 } from "react-bootstrap";
 
-import logo from "./logo192.png";
+import logo from "../assets/BookLogo.webp";
 import {
   BrowserRouter as Router,
   Route,
@@ -30,8 +30,8 @@ class Header extends Component {
             <Navbar.Brand href="/">
               <img
                 src={logo}
-                height="30"
-                width="30"
+                height="45"
+                width="45"
                 className="d-inline-block align-top"
                 alt="logo"
               />
