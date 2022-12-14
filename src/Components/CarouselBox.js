@@ -8,6 +8,7 @@ class CarouselBox extends Component {
   render() {
     return (
       <Carousel>
+        
         <Carousel.Item>
           <img height={840} className="d-block w-100" src={Mik} alt="Mik" />
           <Carousel.Caption>
