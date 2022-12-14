@@ -7,13 +7,39 @@ import Col from 'react-bootstrap/Col';
 import evgexaxzc from "../assets/evgexaxzc.png";
 import MenterCOX from "../assets/MenterCOX.jpg";
 import T4WERKA from "../assets/T4WERKA.jpg";
-import Nikolai from "../assets/Nikolaj_Metlitskij.jpg";                     
+import Nikolai from "../assets/Nikolaj_Metlitskij.jpg";  
 
-class Home extends Component {
-  render() {
+import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
+import useLocalStorage from '../hooks/use-localstorage';  
+
+const Home = () => {
+    const { t } = useTranslation();
+    const [language, setLanguaege] = useLocalStorage('language', 'ru')
+
+    // const handleLanguageChange = () => {
+    //   if (language === 'en') {
+    //     i18n.changeLanguage('ru');
+    //     setLanguaege('ru');
+    //   } else if (language === 'ru') {
+    //     i18n.changeLanguage('en');
+    //     setLanguaege('en');
+    //   }
+    // }
+
+    const setRussian = () => {
+        i18n.changeLanguage('ru');
+        setLanguaege('ru');
+    }
+
+    const setEnglish = () => {
+        i18n.changeLanguage('en');
+        setLanguaege('en');
+    }
+
     return (
-      <>
-    
+        <>
+
         <CarouselBox/>
         <Container>
             <h2 className="text-center m-4">Биография</h2>
@@ -41,14 +67,14 @@ class Home extends Component {
                             <p><b>Гражданство</b> Беларусь</p>
                             <p><b>Дата смерти</b> 27 ноября 2021</p>
                         </Figure.Caption>
-                    </Figure>
+                    </Figure>   
                 </div>
             </div>
         
         </Container>
         
         <Container className="text-center">
-            <h2 className="text-center m-4">Наша команда</h2>
+            <h2 className="text-center m-4" id="about-us">{t('Our team')}</h2>
             <Row>
                 <Col>
                     <Card border="primary"> 
@@ -60,7 +86,7 @@ class Home extends Component {
                         <Card.Body>
                             <Card.Title>evgexaxzc</Card.Title>
                             <Card.Text style={{fontSize:"20px"}}>Евгений Митюля</Card.Text>
-                            <Button href="https://github.com/evgexaxzc" variant="outline-primary">Об участнике</Button>
+                            <Button href="https://github.com/evgexaxzc" variant="outline-primary">{t('About the participant')}</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -75,7 +101,7 @@ class Home extends Component {
                         <Card.Body>
                             <Card.Title>MenterCOX</Card.Title>
                             <Card.Text style={{fontSize:"20px"}}>Даниил Ягниш</Card.Text>
-                            <Button href="https://github.com/MenterCOX" variant="outline-primary">Об участнике</Button>
+                            <Button href="https://github.com/MenterCOX" variant="outline-primary">{t('About the participant')}</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -88,18 +114,17 @@ class Home extends Component {
                             src={T4WERKA}
                         />
                         <Card.Body>
-                            <Card.Title>T4WERKA</Card.Title>
+                            <Card.Title>T4RWERKA</Card.Title>
                             <Card.Text style={{fontSize:"20px"}}>Денис Шафаренко</Card.Text>
-                            <Button href="https://github.com/T4RWERKA" variant="outline-primary">Об участнике</Button>
+                            <Button href="https://github.com/T4RWERKA" variant="outline-primary">{t('About the participant')}</Button>
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>    
         </Container>
         
-      </>
+        </>
     );
-  }
- 
-}
+    }
+
 export default Home;
