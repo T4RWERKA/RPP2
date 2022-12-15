@@ -12,9 +12,14 @@ code {
     monospace;
 }
 
+
 h2{
   color:black;
+  text-align:center;
+  padding: 10px;
 }
+
+
 .card{
   padding: 10px;
   margin-bottom: 100px;
@@ -62,28 +67,112 @@ h2{
   height: 1000px;
 }
 
-@media all and (max-width: 800px) {
-  #carousel img{
-    max-width: 100%;
-    height: auto;
-  }
-  
-}
-
 .dropdown {
   padding-left: 20px;
 }
 
 .who-is-this {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-is-this .person_about{
+  margin-left: 100px;
+}
+
+.awards-creativity li{
+  font-size: 20px;
+  vertical-align: auto;
+}
+
+.awards-creativity span{
+  display: inline;
+  position: relative; 
+  top: -2px;
+}
+
+.awards-creativity li::marker{
+  content: '» ';
+  font-size: 1.7em;
+  color:rgb(42, 140, 165);
+  line-height: auto;
 }
 
 .list-of-works {
-  column-count: 3
+  text-align: left;
+  display: grid ;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 10px  ;
+  width: 70%;
+  font-size: 20px;
+  line-height: 30px;
+  margin: auto;
+}
+
+.list-of-works span{
+  position: relative; 
+  top: -6px;
+}
+
+.list-of-works li::marker{
+  content: '◦ ';
+  font-size: 1.8em;
+  color:rgb(42, 140, 165);
+}
+
+.creation{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+}
+
+.creation p{
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  line-height: 40px;
+}
+
+@media all and (max-width: 800px) {
+  #carousel img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .who-is-this{
+    flex-direction: column;
+  }
+
+  .who-is-this .person_about{
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .map-on-right{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-of-works {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
 }
 
 /* Маленькие экраны */
 @media all and (max-width: 500px) {
+  .map-on-right{
+    flex-direction: column;
+  }
+
   #carousel img{
     max-width: 100%;
     height: 300px;
@@ -101,22 +190,28 @@ h2{
     flex-direction: column;
   }
   
-  .map-and-video {
-    width: 90%;
-  }
 
   .who-is-this {
     flex-direction: column;
   }
 
+  .who-is-this .person_about{
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .list-of-works {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+
+  
+
 }
 
 .dropdown {
   padding-left: 20px;
-}
-
-.list-of-works {
-  column-count: 3
 }
 
 .map-on-right {
@@ -125,13 +220,13 @@ h2{
 
 .awards-creativity {
   width: 70%;
-  padding: 5%;
+  padding: 5% 5% 0 5%;
 }
 
 .map-and-video {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 9%;
 }
 
 #myInput {
@@ -176,6 +271,3 @@ h2{
   margin: 5% 5%;
 }
 
-.who-is-this {
-  display: flex;
-}
