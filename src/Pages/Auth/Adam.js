@@ -99,7 +99,7 @@ class Hilevich extends Component {
                         <li><span>«Койданово» (1997)</span></li>
                         <li><span>«Новый домовикомерон» (1998)</span></li>
                         <li><span>«Post scriptum» (1999)</span></li>
-                        <li><span>«Тексты» (2000), сборник всех предыдущих книг</span></li>
+                        <li><span>«Тексты» (2000)</span></li>
                         <li><span>«Браславская стигмата» (2001)</span></li>
                         <li><span>«Тетради» (2003)</span></li>
                         <li><span>«Дом». Роман (2005)</span></li>
