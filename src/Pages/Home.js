@@ -11,6 +11,7 @@ import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
 import useLocalStorage from "../hooks/use-localstorage";
 
+
 const Home = () => {
   const { t } = useTranslation();
   const [language, setLanguaege] = useLocalStorage("language", "ru");
