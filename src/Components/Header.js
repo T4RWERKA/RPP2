@@ -106,13 +106,13 @@ const Header = () => {
                 onKeyUp={filterFunction}
               />
              
-  <div id="myDropdown" class="dropdown-content">
-    <a href="/authors/hilevich">Нил Гилевич</a>
-    <a href="/authors/metliskij">Николай Метли́цкий</a>
-    <a href="/authors/brovka">Пётр Бровка</a>
-    <a href="/authors/borodulin">Егор Бородулин</a>
-    <a href="/authors/globus">Адам Глобус</a>
-  </div>
+             <div id="myDropdown" class="dropdown-content">
+                <a href="/authors/hilevich">Нил Гилевич</a>
+                <a href="/authors/metliskij">Николай Метли́цкий</a>
+                <a href="/authors/brovka">Пётр Бровка</a>
+                <a href="/authors/borodulin">Егор Бородулин</a>
+                <a href="/authors/globus">Адам Глобус</a>
+             </div>
             </Form>
             <Button variant="outline-info" >{t('Search')}</Button>
             <div class="dropdown">
