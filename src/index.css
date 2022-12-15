@@ -70,6 +70,18 @@ h2{
   
 }
 
+.dropdown {
+  padding-left: 20px;
+}
+
+.who-is-this {
+  display: flex;
+}
+
+.list-of-works {
+  column-count: 3
+}
+
 /* Маленькие экраны */
 @media all and (max-width: 500px) {
   #carousel img{
@@ -85,9 +97,42 @@ h2{
     flex-direction: column;
   }
   
+  .map-on-right {
+    flex-direction: column;
+  }
+  
+  .map-and-video {
+    width: 90%;
+  }
+
+  .who-is-this {
+    flex-direction: column;
+  }
+
 }
 
+.dropdown {
+  padding-left: 20px;
+}
 
+.list-of-works {
+  column-count: 3
+}
+
+.map-on-right {
+  display: flex;
+}
+
+.awards-creativity {
+  width: 70%;
+  padding: 5%;
+}
+
+.map-and-video {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
 
 #myInput {
   box-sizing: border-box;
@@ -126,3 +171,11 @@ h2{
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+=======
+.map-and-video iframe {
+  margin: 5% 5%;
+}
+
+.who-is-this {
+  display: flex;
+}
