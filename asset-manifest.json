@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RPP2_react.gitub.io/static/css/main.7aafcc7a.css",
-    "main.js": "/RPP2_react.gitub.io/static/js/main.c6c5fb8e.js",
+    "main.js": "/RPP2_react.gitub.io/static/js/main.f0c4e25d.js",
     "static/js/787.7ec122fa.chunk.js": "/RPP2_react.gitub.io/static/js/787.7ec122fa.chunk.js",
     "static/media/Mik_1.jpg": "/RPP2_react.gitub.io/static/media/Mik_1.5edc3e77e24c89afb35f.jpg",
     "static/media/Mik.jpg": "/RPP2_react.gitub.io/static/media/Mik.9a051ad36cc89a3ceffc.jpg",
@@ -23,11 +23,11 @@
     "static/media/logo.svg": "/RPP2_react.gitub.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/RPP2_react.gitub.io/index.html",
     "main.7aafcc7a.css.map": "/RPP2_react.gitub.io/static/css/main.7aafcc7a.css.map",
-    "main.c6c5fb8e.js.map": "/RPP2_react.gitub.io/static/js/main.c6c5fb8e.js.map",
+    "main.f0c4e25d.js.map": "/RPP2_react.gitub.io/static/js/main.f0c4e25d.js.map",
     "787.7ec122fa.chunk.js.map": "/RPP2_react.gitub.io/static/js/787.7ec122fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aafcc7a.css",
-    "static/js/main.c6c5fb8e.js"
+    "static/js/main.f0c4e25d.js"
   ]
 }
