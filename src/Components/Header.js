@@ -33,7 +33,6 @@ import {
   Link,
   Switch,
 } from "react-router-dom";
-
 const Header = () => {
   const { t } = useTranslation();
   const [language, setLanguaege] = useLocalStorage('language', 'ru')
@@ -56,6 +55,24 @@ const Header = () => {
   const setEnglish = () => {
     i18n.changeLanguage('en');
     setLanguaege('en');
+  }
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  function filterFunction() {
+    var input, filter,div,txt, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txt = a[i].text || a[i].innerText;
+      if (txt.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
   }
 
   return (
@@ -80,10 +97,22 @@ const Header = () => {
             </Nav>
             <Form inline>
               <FormControl
+                id="myInput"
+                class="dropbtn"
                 type="text"
                 placeholder={t('Search')}
                 className="me-sm-2"
+                onClick={myFunction}
+                onKeyUp={filterFunction}
               />
+             
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/authors/hilevich">Нил Гилевич</a>
+    <a href="/authors/metliskij">Николай Метли́цкий</a>
+    <a href="/authors/brovka">Пётр Бровка</a>
+    <a href="/authors/borodulin">Егор Бородулин</a>
+    <a href="/authors/globus">Адам Глобус</a>
+  </div>
             </Form>
             <Button variant="outline-info" >{t('Search')}</Button>
             <div class="dropdown">
