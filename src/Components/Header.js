@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import About from "../Pages/About";
 import Home from "../Pages/Home";
 import Authors from "../Pages/Authors";
@@ -9,9 +9,9 @@ import Brovka from "../Pages/Auth/Brovka";
 import Borodulin from "../Pages/Auth/Borodulin";
 import Adam from "../Pages/Auth/Adam";
 
-import i18n from '../i18n';
-import { useTranslation } from 'react-i18next';
-import useLocalStorage from '../hooks/use-localstorage';  
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
+import useLocalStorage from "../hooks/use-localstorage";
 
 import {
   Button,
@@ -27,16 +27,11 @@ import {
 
 import logo from "../assets/BookLogo.webp";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 const Header = () => {
   const { t } = useTranslation();
-  const [language, setLanguaege] = useLocalStorage('language', 'ru')
-  
+  const [language, setLanguaege] = useLocalStorage("language", "ru");
+
   // const handleLanguageChange = () => {
   //   if (language === 'en') {
   //     i18n.changeLanguage('ru');
@@ -48,19 +43,19 @@ const Header = () => {
   // }
 
   const setRussian = () => {
-    i18n.changeLanguage('ru');
-    setLanguaege('ru');
-  }
+    i18n.changeLanguage("ru");
+    setLanguaege("ru");
+  };
 
   const setEnglish = () => {
-    i18n.changeLanguage('en');
-    setLanguaege('en');
-  }
+    i18n.changeLanguage("en");
+    setLanguaege("en");
+  };
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   function filterFunction() {
-    var input, filter,div,txt, a, i;
+    var input, filter, div, txt, a, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
     div = document.getElementById("myDropdown");
@@ -91,59 +86,70 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/"> {t('Home')} </Nav.Link>
-              <Nav.Link href="/authors"> {t('Authors')} </Nav.Link>
-              <Nav.Link href="/#about-us">{t('About us')}</Nav.Link>
+              <Nav.Link href="/"> {t("Home")} </Nav.Link>
+              <Nav.Link href="/authors"> {t("Authors")} </Nav.Link>
+              <Nav.Link href="/#about-us">{t("About us")}</Nav.Link>
             </Nav>
-            <Form inline>
-              <FormControl
-                id="myInput"
-                class="dropbtn"
-                type="text"
-                placeholder={t('Search')}
-                className="me-sm-2"
-                onClick={myFunction}
-                onKeyUp={filterFunction}
-              />
-             
-             <div id="myDropdown" class="dropdown-content">
-                <a href="/authors/hilevich">Нил Гилевич</a>
-                <a href="/authors/metliskij">Николай Метли́цкий</a>
-                <a href="/authors/brovka">Пётр Бровка</a>
-                <a href="/authors/borodulin">Егор Бородулин</a>
-                <a href="/authors/globus">Адам Глобус</a>
-             </div>
-            </Form>
-            <Button variant="outline-info" >{t('Search')}</Button>
+            <div class="search">
+              <Form inline>
+                <FormControl
+                  id="myInput"
+                  class="dropbtn"
+                  type="text"
+                  placeholder={t("Search")}
+                  className="me-sm-2"
+                  onClick={myFunction}
+                  onKeyUp={filterFunction}
+                />
+
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="/authors/hilevich">Нил Гилевич</a>
+                  <a href="/authors/metliskij">Николай Метли́цкий</a>
+                  <a href="/authors/brovka">Пётр Бровка</a>
+                  <a href="/authors/borodulin">Егор Бородулин</a>
+                  <a href="/authors/globus">Адам Глобус</a>
+                </div>
+              </Form>
+              <Button variant="outline-info">{t("Search")}</Button>
+            </div>
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {language === 'ru' ? 'RU' : 'EN'}
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {language === "ru" ? "RU" : "EN"}
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" onClick={setEnglish} href="#">EN</a>
-                <a class="dropdown-item" onClick={setRussian} href="#">RU</a>
+                <a class="dropdown-item" onClick={setEnglish} href="#">
+                  EN
+                </a>
+                <a class="dropdown-item" onClick={setRussian} href="#">
+                  RU
+                </a>
               </div>
             </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/authors" component={Authors} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/authors/hilevich" component={Hilevich} />
-            <Route exact path="/authors/metliskij" component={Metliskij} />
-            <Route exact path="/authors/brovka" component={Brovka} />
-            <Route exact path="/authors/borodulin" component={Borodulin} />
-            <Route exact path="/authors/globus" component={Adam} />
-          </Switch>
-        </Router>
-
-      </>
-    );
-  }
-
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/authors" component={Authors} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/authors/hilevich" component={Hilevich} />
+          <Route exact path="/authors/metliskij" component={Metliskij} />
+          <Route exact path="/authors/brovka" component={Brovka} />
+          <Route exact path="/authors/borodulin" component={Borodulin} />
+          <Route exact path="/authors/globus" component={Adam} />
+        </Switch>
+      </Router>
+    </>
+  );
+};
 
 export default Header;
