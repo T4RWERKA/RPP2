@@ -48,7 +48,7 @@ class Authors extends Component {
             <Card border="dark">
               <Card.Img variant="top" src={egor} alt="Baradulin" />
               <Card.Body>
-                <Card.Title>Егор Барадулин</Card.Title>
+                <Card.Title>Рыгор Барадулин</Card.Title>
                 <Button href="/authors/borodulin" variant="outline-dark">
                   Об авторе
                 </Button>
