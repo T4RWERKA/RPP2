@@ -19,6 +19,11 @@ h2{
   padding: 10px;
 }
 
+.search{
+  display: grid;
+  gap: 7%;
+  grid-template-columns: auto auto;
+}
 
 .card{
   padding: 10px;
@@ -31,9 +36,6 @@ h2{
   width: 70%;
 }
 
-.person_card{
-  width: 30%;
-}
 
 #person{
   display: flex;
@@ -64,11 +66,7 @@ h2{
 
 #carousel img{
   max-width: 100%;
-  height: 1000px;
-}
-
-.dropdown {
-  padding-left: 20px;
+  height: 990px;
 }
 
 .who-is-this {
@@ -138,6 +136,10 @@ h2{
   line-height: 40px;
 }
 
+.dropdown button{
+  margin-left: 15px;
+}
+
 @media all and (max-width: 800px) {
   #carousel img{
     max-width: 100%;
@@ -165,6 +167,12 @@ h2{
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
   }
+
+  .dropdown button{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
 }
 
 /* Маленькие экраны */
@@ -184,6 +192,8 @@ h2{
 
   #person{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .map-on-right {
@@ -205,14 +215,8 @@ h2{
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
   }
-
-  
-
 }
 
-.dropdown {
-  padding-left: 20px;
-}
 
 .map-on-right {
   display: flex;
@@ -221,6 +225,7 @@ h2{
 .awards-creativity {
   width: 70%;
   padding: 5% 5% 0 5%;
+  font-size: 20px;
 }
 
 .map-and-video {
@@ -242,7 +247,7 @@ h2{
 #myInput:focus {outline: 3px solid #ddd;}
 
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
 
@@ -250,7 +255,7 @@ h2{
   display: none;
   position: absolute;
   background-color: #f6f6f6;
-  min-width: 255px;
+  max-width: 505px;
   overflow: auto;
   border: 1px solid #ddd;
   z-index: 1;
@@ -258,7 +263,7 @@ h2{
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 14px;
   text-decoration: none;
   display: block;
 }
