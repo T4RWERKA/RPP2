@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/RPP2_react/static/css/main.7aafcc7a.css",
+    "main.js": "/RPP2_react/static/js/main.b5a7cf19.js",
+    "static/js/787.7ec122fa.chunk.js": "/RPP2_react/static/js/787.7ec122fa.chunk.js",
+    "static/media/Mik_1.jpg": "/RPP2_react/static/media/Mik_1.5edc3e77e24c89afb35f.jpg",
+    "static/media/Mik.jpg": "/RPP2_react/static/media/Mik.9a051ad36cc89a3ceffc.jpg",
+    "static/media/Mik_2.jpg": "/RPP2_react/static/media/Mik_2.cdcab2004eb3cfe2ac15.jpg",
+    "static/media/Mik1.jpg": "/RPP2_react/static/media/Mik1.cd30e81937c666b90f5c.jpg",
+    "static/media/Mik2.jpg": "/RPP2_react/static/media/Mik2.2c80481817fede63e471.jpg",
+    "static/media/Nil1.jpg": "/RPP2_react/static/media/Nil1.dfec9e7458b1d351e833.jpg",
+    "static/media/Globus.jpg": "/RPP2_react/static/media/Globus.14f9aea0cfa69604aea4.jpg",
+    "static/media/Boroda.jpg": "/RPP2_react/static/media/Boroda.dd34239b1174a0f2b570.jpg",
+    "static/media/Petr1.jpg": "/RPP2_react/static/media/Petr1.42617f7129d33a03109d.jpg",
+    "static/media/Nikolaj_Metlitskij.jpg": "/RPP2_react/static/media/Nikolaj_Metlitskij.c2c31f86c8206f4a9ea8.jpg",
+    "static/media/evgexaxzc.jpg": "/RPP2_react/static/media/evgexaxzc.a08061b24114aa112795.jpg",
+    "static/media/damsm.jpg": "/RPP2_react/static/media/damsm.9261481285d1528be89c.jpg",
+    "static/media/Nil_Small.jpg": "/RPP2_react/static/media/Nil_Small.358bf18b29dd2bd40d26.jpg",
+    "static/media/T4WERKA.jpg": "/RPP2_react/static/media/T4WERKA.923a44bb5348b567fe5b.jpg",
+    "static/media/BrovkaSm.jpg": "/RPP2_react/static/media/BrovkaSm.7960550cd747856fb3a7.jpg",
+    "static/media/MenterCOX.jpg": "/RPP2_react/static/media/MenterCOX.44c4236f210189f35fdb.jpg",
+    "static/media/BookLogo.webp": "/RPP2_react/static/media/BookLogo.dee23c79426317d55c54.webp",
+    "static/media/logo.svg": "/RPP2_react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/RPP2_react/index.html",
+    "main.7aafcc7a.css.map": "/RPP2_react/static/css/main.7aafcc7a.css.map",
+    "main.b5a7cf19.js.map": "/RPP2_react/static/js/main.b5a7cf19.js.map",
+    "787.7ec122fa.chunk.js.map": "/RPP2_react/static/js/787.7ec122fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7aafcc7a.css",
+    "static/js/main.b5a7cf19.js"
+  ]
+}
