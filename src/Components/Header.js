@@ -27,7 +27,7 @@ import {
 
 import logo from "../assets/BookLogo.webp";
 
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 const Header = () => {
   const { t } = useTranslation();
   const [language, setLanguaege] = useLocalStorage("language", "ru");
