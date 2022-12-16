@@ -76,7 +76,7 @@ const Home = () => {
                 <p>
                   <b>Дата смерти</b> 27 ноября 2021
                 </p>
-                <a href="/authors/metliskij">
+                <a href="/RPP2_react.github.io/authors/metliskij">
                   <b>{t("Read about")}</b>
                 </a>
               </Figure.Caption>

@@ -19,7 +19,7 @@ class Authors extends Component {
               <Card.Img variant="top" src={Mik} alt="Mikola" />
               <Card.Body>
                 <Card.Title>Николай Метлицкий</Card.Title>
-                <Button href="/authors/metliskij" variant="outline-dark">
+                <Button href="/RPP2_react.github.io/authors/metliskij" variant="outline-dark">
                   Об авторе
                 </Button>
               </Card.Body>
@@ -29,7 +29,7 @@ class Authors extends Component {
               <Card.Img variant="top" src={Nil} alt="Nil" />
               <Card.Body>
                 <Card.Title>Нил Гилевич</Card.Title>
-                <Button href="/authors/hilevich" variant="outline-dark">
+                <Button href="/RPP2_react.github.io/authors/hilevich" variant="outline-dark">
                   Об авторе
                 </Button>
               </Card.Body>
@@ -39,7 +39,7 @@ class Authors extends Component {
               <Card.Img variant="top" alt="Brovka" src={Petr} />
               <Card.Body>
                 <Card.Title>Пётр Бровка</Card.Title>
-                <Button href="/authors/brovka" variant="outline-dark">
+                <Button href="/RPP2_react.github.io/authors/brovka" variant="outline-dark">
                   Об авторе
                 </Button>
               </Card.Body>
@@ -49,7 +49,7 @@ class Authors extends Component {
               <Card.Img variant="top" src={egor} alt="Baradulin" />
               <Card.Body>
                 <Card.Title>Рыгор Барадулин</Card.Title>
-                <Button href="/authors/borodulin" variant="outline-dark">
+                <Button href="/RPP2_react.github.io/authors/borodulin" variant="outline-dark">
                   Об авторе
                 </Button>
               </Card.Body>
@@ -59,7 +59,7 @@ class Authors extends Component {
               <Card.Img variant="top" src={Globus} alt="Globus" />
               <Card.Body>
                 <Card.Title>Адам Глобус</Card.Title>
-                <Button href="/authors/globus" variant="outline-dark">
+                <Button href="/RPP2_react.github.io/authors/globus" variant="outline-dark">
                   Об авторе
                 </Button>
               </Card.Body>
