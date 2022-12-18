@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.40970b17.css",
+    "main.js": "/static/js/main.12ee1a7f.js",
+    "static/js/787.7ec122fa.chunk.js": "/static/js/787.7ec122fa.chunk.js",
+    "static/media/Mik_1.jpg": "/static/media/Mik_1.5edc3e77e24c89afb35f.jpg",
+    "static/media/Mik.jpg": "/static/media/Mik.9a051ad36cc89a3ceffc.jpg",
+    "static/media/Mik_2.jpg": "/static/media/Mik_2.cdcab2004eb3cfe2ac15.jpg",
+    "static/media/Mik1.jpg": "/static/media/Mik1.cd30e81937c666b90f5c.jpg",
+    "static/media/Mik2.jpg": "/static/media/Mik2.2c80481817fede63e471.jpg",
+    "static/media/Nil1.jpg": "/static/media/Nil1.dfec9e7458b1d351e833.jpg",
+    "static/media/Globus.jpg": "/static/media/Globus.14f9aea0cfa69604aea4.jpg",
+    "static/media/Boroda.jpg": "/static/media/Boroda.dd34239b1174a0f2b570.jpg",
+    "static/media/Petr1.jpg": "/static/media/Petr1.42617f7129d33a03109d.jpg",
+    "static/media/Nikolaj_Metlitskij.jpg": "/static/media/Nikolaj_Metlitskij.c2c31f86c8206f4a9ea8.jpg",
+    "static/media/evgexaxzc.jpg": "/static/media/evgexaxzc.a08061b24114aa112795.jpg",
+    "static/media/damsm.jpg": "/static/media/damsm.9261481285d1528be89c.jpg",
+    "static/media/Nil_Small.jpg": "/static/media/Nil_Small.358bf18b29dd2bd40d26.jpg",
+    "static/media/T4WERKA.jpg": "/static/media/T4WERKA.923a44bb5348b567fe5b.jpg",
+    "static/media/BrovkaSm.jpg": "/static/media/BrovkaSm.7960550cd747856fb3a7.jpg",
+    "static/media/MenterCOX.jpg": "/static/media/MenterCOX.44c4236f210189f35fdb.jpg",
+    "static/media/BookLogo.webp": "/static/media/BookLogo.dee23c79426317d55c54.webp",
+    "index.html": "/index.html",
+    "main.40970b17.css.map": "/static/css/main.40970b17.css.map",
+    "main.12ee1a7f.js.map": "/static/js/main.12ee1a7f.js.map",
+    "787.7ec122fa.chunk.js.map": "/static/js/787.7ec122fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40970b17.css",
+    "static/js/main.12ee1a7f.js"
+  ]
+}
