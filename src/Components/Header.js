@@ -74,7 +74,7 @@ const Header = () => {
     <>
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/RPP2/">
+          <Navbar.Brand href="/">
             <img
               src={logo}
               height="45"
@@ -86,9 +86,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/RPP2"> {t("Home")} </Nav.Link>
-              <Nav.Link href="/RPP2/authors"> {t("Authors")} </Nav.Link>
-              <Nav.Link href="/RPP2#about-us">{t("About us")}</Nav.Link>
+              <Nav.Link href="https://t4rwerka.github.io"> {t("Home")} </Nav.Link>
+              <Nav.Link href="https://t4rwerka.github.io/authors"> {t("Authors")} </Nav.Link>
+              <Nav.Link href="https://t4rwerka.github.io#about-us">{t("About us")}</Nav.Link>
             </Nav>
             <div class="search">
               <Form inline>
@@ -103,11 +103,11 @@ const Header = () => {
                 />
 
                 <div id="myDropdown" class="dropdown-content">
-                  <Link href="/RPP2/authors/hilevich">Нил Гилевич</Link>
-                  <Link href="/RPP2/authors/metliskij">Николай Метли́цкий</Link>
-                  <Link href="/RPP2/authors/brovka">Пётр Бровка</Link>
-                  <Link href="/RPP2/authors/borodulin">Егор Бородулин</Link>
-                  <Link href="/RPP2/authors/globus">Адам Глобус</Link>
+                  <Link href="https://t4rwerka.github.io/authors/hilevich">Нил Гилевич</Link>
+                  <Link href="https://t4rwerka.github.io/authors/metliskij">Николай Метли́цкий</Link>
+                  <Link href="https://t4rwerka.github.io/authors/brovka">Пётр Бровка</Link>
+                  <Link href="https://t4rwerka.github.io/authors/borodulin">Егор Бородулин</Link>
+                  <Link href="https://t4rwerka.github.io/authors/globus">Адам Глобус</Link>
                 </div>
               </Form>
               <Button variant="outline-info">{t("Search")}</Button>
@@ -138,14 +138,14 @@ const Header = () => {
 
       <Router>
         <Switch>
-          <Route exact path="/RPP2" component={Home} />
-          <Route exact path="/RPP2/authors" component={Authors} />
-          <Route exact path="/RPP2/about" component={About} />
-          <Route exact path="/RPP2/authors/hilevich" component={Hilevich} />
-          <Route exact path="/RPP2/authors/metliskij" component={Metliskij} />
-          <Route exact path="/RPP2o/authors/brovka" component={Brovka} />
-          <Route exact path="/RPP2/authors/borodulin" component={Borodulin} />
-          <Route exact path="/RPP2/authors/globus" component={Adam} />
+          <Route exact path="https://t4rwerka.github.io" component={Home} />
+          <Route exact path="https://t4rwerka.github.io/authors" component={Authors} />
+          <Route exact path="https://t4rwerka.github.io/about" component={About} />
+          <Route exact path="https://t4rwerka.github.io/authors/hilevich" component={Hilevich} />
+          <Route exact path="https://t4rwerka.github.io/authors/metliskij" component={Metliskij} />
+          <Route exact path="https://t4rwerka.github.io/authors/brovka" component={Brovka} />
+          <Route exact path="https://t4rwerka.github.io/authors/borodulin" component={Borodulin} />
+          <Route exact path="https://t4rwerka.github.io/authors/globus" component={Adam} />
         </Switch>
       </Router>
     </>
