@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import Hilevichimg from "../../assets/Nil_Small.jpg"
 
 class Hilevich extends Component{    
@@ -8,13 +9,12 @@ class Hilevich extends Component{
         <>
             <h2>Нил Гилевич</h2>
             <div class="who-is-this"> 
-                {/*я не знаю, почему картинка не отображается*/}
                 <img src={Hilevichimg} width="200" alt=""/> 
                 <p class="person_about">Ни́л Семёнович Гиле́вич (белор. Ні́л Сымо́навіч Гіле́віч; 30 сентября 1931, дер. Слобода Логойского района Минской области — 29 марта 2016, Минск) — переводчик, литературовед, фольклорист, общественный деятель. Народный поэт Беларуси (1991), Заслуженный деятель науки Белорусской ССР (1980). Лауреат Государственной премии Белорусской ССР имени Янки Купалы (1980). Лауреат Международной премии имени Х. Ботева (1986). Кандидат филологических наук, профессор. Член Союза писателей СССР (1954).</p>
             </div>
             
-            <Timeline lineColor={'#ddd'}>
-                <TimelineItem
+            <VerticalTimeline lineColor={'#ddd'}>
+                <VerticalTimelineElement
                     key="001"
                     dateText="1931 – 1940-е"
                     dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -31,8 +31,8 @@ class Hilevich extends Component{
                     области в крестьянской семье. Настоящее имя — Нинел, впоследствии сменил 
                     имя на Нил. Брат — белорусский писатель М. Гиль.
                     </p>
-                </TimelineItem>
-                <TimelineItem
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
                     key="002"
                     dateText="1940-е – 1960-e"
                     dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -50,8 +50,8 @@ class Hilevich extends Component{
                     филологический факультет Белорусского государственного университета (1956) 
                     и аспирантуру при нём. 
                     </p>
-                </TimelineItem>
-                <TimelineItem
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
                     key="003"
                     dateText="1960-e – 1990-е"
                     dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -74,8 +74,8 @@ class Hilevich extends Component{
                     исторического наследия в 1990—1995, член Президиума Верховного Совета Белорусской 
                     ССР.
                     </p>
-                </TimelineItem>
-                <TimelineItem
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
                     key="004"
                     dateText="2016"
                     dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -93,8 +93,8 @@ class Hilevich extends Component{
                     Кальварийском кладбище рядом с могилой супруги. 23 ноября 2018 года на 
                     могиле Нила Гилевича был открыт надгробный памятник.
                     </p>
-                </TimelineItem>
-            </Timeline>
+                </VerticalTimelineElement>
+            </VerticalTimeline>
             
             <div class="map-on-right">
                 <div class="awards-creativity">

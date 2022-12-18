@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import Adam from "../../assets/damsm.jpg"
 
 class Hilevich extends Component {
@@ -12,8 +13,8 @@ class Hilevich extends Component {
                     <p class="person_about">Ада́м Гло́бус (белор. Адам Глобус, также Адам Глёбус; наст. имя и фамилия Влади́мир Вячесла́вович Ада́мчик, белор. Уладзімір Вячаслававіч Адамчык; род. 29 сентября 1958) — советский и белорусский писатель, поэт, художник, издатель.</p>
                 </div>
 
-                <Timeline lineColor={'#ddd'}>
-                    <TimelineItem
+                <VerticalTimeline lineColor={'#ddd'}>
+                    <VerticalTimelineElement
                         key="001"
                         dateText="1958 – 1970-е"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -29,8 +30,8 @@ class Hilevich extends Component {
                             Глобус родился в ДзержинскеМинской области в семье белорусского писателя (белорус : Вячеслав Адамчик). С 1959 года проживал в Минске.
                             Настоящее имя - Владимир Васильевич Адамчик
                         </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="002"
                         dateText="1972 – 1975"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -44,8 +45,8 @@ class Hilevich extends Component {
                         <h3>Учеба и работа</h3>
                         <p>
                         Окончил педагогический факультет им. (1977), художественный факультет Белорусский театрально-художественный институт (1983). Работал рисовальщиком, художником-реставратором, графиком, редактором журнала «Криница» (с 1987)         </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="003"
                         dateText="1970-е – наше время"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -60,8 +61,8 @@ class Hilevich extends Component {
                         <p>
                         Он был одним из основателей неформального объединения молодых писателей «Тутейшийя» (Tuteishyja, 1986–1990), что в силу обстоятельств связано не только с литературой. , но также и выражение активной социальной и политической позиции. В частности, в октябре 1988 года и был организован союз, ставший впоследствии традиционным, прежде всего в Беларуси, акция поминовения под названием «Ева предков» с многотысячным шествием и митингом. Член Союза писателей (1988) (с 1989 г.).
                         </p>
-                    </TimelineItem>
-                </Timeline>
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
 
                 <div class="map-on-right">
                     <div class="awards-creativity">

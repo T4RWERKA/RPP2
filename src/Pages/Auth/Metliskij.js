@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import Metlitskijimg from "../../assets/Nikolaj_Metlitskij.jpg"
 
 class Metlitskij extends Component{    
@@ -12,8 +13,8 @@ class Metlitskij extends Component{
                     <p class="person_about">Никола́й Миха́йлович Метли́цкий (белор. Мікала́й Міха́йлавіч (Міко́ла) Мятлі́цкі; 20 марта 1954, д. Бабчин, Хойнинский район, Гомельская область — 27 ноября 2021) — белорусский поэт, переводчик, публицист, журналист. Заслуженный деятель культуры Республики Беларусь (2019). Лауреат Государственной премии Республики Беларусь имени Янки Купалы (1998). Лауреат премии Ленинского комсомола Белорусской ССР (1986). Лауреат Специальной премии Президента Республики Беларусь деятелям культуры и искусства (2013). Член Союза писателей СССР (1981).</p>
                 </div>
 
-                <Timeline lineColor={'#ddd'}>
-                    <TimelineItem
+                <VerticalTimeline lineColor={'#ddd'}>
+                    <VerticalTimelineElement
                         key="001"
                         dateText="1935 – 1945"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -28,8 +29,8 @@ class Metlitskij extends Component{
                         <p>
                         Родился 20 марта 1954 года в крестьянской семье в д. Бабчин Хойникского района, Гомельской области, Белорусская ССР.
                         </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="002"
                         dateText="1945 – 1959"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -43,8 +44,8 @@ class Metlitskij extends Component{
                         <h3>Учеба</h3>
                         <p>
                         В 1971 году окончил Бабчинскую среднюю школу. В 1976 году — филологический факультет Белорусского государственного университета имени В. И. Ленина. </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="003"
                         dateText="1959 – 2000"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -59,8 +60,8 @@ class Metlitskij extends Component{
                         <p>
                         Работал в редакции газеты «Ленінскі сцяг», корреспондентом еженедельника «Літаратура і мастацтва» (1977—1983), старшим редактором редакции критики, литературоведения и драматургии издательства «Мастацкая літаратура» (1983—2002). В 2002—2014 годах — главный редактор старейшего белорусского литературного журнала «Полымя» (издательский дом «Звязда»). Является секретарём Союза писателей Беларуси.
                         </p>
-                    </TimelineItem>
-                </Timeline>
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
 
                 <div class="map-on-right">
                     <div class="awards-creativity">

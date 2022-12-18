@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import Boroda from "../../assets/Boroda.jpg"
 
 class Borodulin extends Component {
@@ -12,8 +13,8 @@ class Borodulin extends Component {
                     <p class="person_about">Рыго́р (Григо́рий) Ива́нович Бороду́лин (белор. Рыгор Іванавіч Барадулін; 24 февраля 1935, хутор Вересовка (ныне СЗ окраина дер. Тихоняты Сорочинского сельсовета), Ушачский район, Витебская область — 2 марта 2014, Минск) — советский и белорусский поэт, эссеист, редактор, переводчик. Народный поэт Беларуси (1992).</p>
                 </div>
 
-                <Timeline lineColor={'#ddd'}>
-                    <TimelineItem
+                <VerticalTimeline lineColor={'#ddd'}>
+                    <VerticalTimelineElement
                         key="001"
                         dateText="1935 – 1945"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -28,8 +29,8 @@ class Borodulin extends Component {
                         <p>
                         Григорий Бородулин родился 24 февраля 1935 года на хуторе Вересовка (официальное название хутора было «Городок-2»[1], ныне это северо-западная окраина дер. Тихоняты Сорочинского сельсовета), в 1937 году хутор был ликвидирован, и семью переселили в Ушачи. Отец Иван Григорьевич Бородулин (погиб в партизанском отряде в 1944 году), мать Акулина Андреевна Бородулина (1909—1971). Дед поэта по материнской линии Андрей Гальвиньш был этническим латышом.
                         </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="002"
                         dateText="1945 – 1959"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -43,8 +44,8 @@ class Borodulin extends Component {
                         <h3>Учеба</h3>
                         <p>
                         Учился в Ушачской средней школе (окончил в 1954 году), затем на филологическом факультете БГУ (окончил в 1959 году).         </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="003"
                         dateText="1959 – 2000"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -62,8 +63,8 @@ class Borodulin extends Component {
                         <p>
                         В составе государственной делегации Белорусской ССР Бородулин принимал участие в 39 сессии Генеральной ассамблеи ООН (1984).
                         </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="004"
                         dateText="2000 – 2016"
                         dateInnerStyle={{ background: '#333', color: '#fff' }}
@@ -78,8 +79,8 @@ class Borodulin extends Component {
                         <p>
                         Умер 2 марта 2014 года в своей квартире в Минске на 80-м году жизни от болезни Паркинсона. Президент Республики Беларусь А. Г. Лукашенко направил родственникам Р. И. Бородулина соболезнование. Прощание и панихида по греко-католическому обряду прошли 4 марта 2014 года в Минске в Костёле Святого Симеона и Святой Елены. Белорусский поэт похоронен рядом с матерью на Ушачском кладбище в Витебской области, как и хотел поэт при жизни.
                         </p>
-                    </TimelineItem>
-                </Timeline>
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
 
                 <div class="map-on-right">
                     <div class="awards-creativity">

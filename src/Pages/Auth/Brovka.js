@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import Brovka from "../../assets/BrovkaSm.jpg";
 
 class Hilevich extends Component {
@@ -20,8 +21,8 @@ class Hilevich extends Component {
           </p>
         </div>
 
-        <Timeline lineColor={"#ddd"}>
-          <TimelineItem
+        <VerticalTimeline lineColor={"#ddd"}>
+          <VerticalTimelineElement
             key="001"
             dateText="1910-e – 1920-e"
             dateInnerStyle={{ background: "#333", color: "#fff" }}
@@ -39,8 +40,8 @@ class Hilevich extends Component {
               (9 детей). Отец — Устин Адамович. Мать — Алёна Степановна. Окончил
               церковно-приходскую школу в Лепеле[2].
             </p>
-          </TimelineItem>
-          <TimelineItem
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
             key="002"
             dateText="1920-е – 1960-e"
             dateInnerStyle={{ background: "#333", color: "#fff" }}
@@ -67,8 +68,8 @@ class Hilevich extends Component {
               советской энциклопедии (ныне — «Белорусская Энциклопедия имени П.
               Бровки»).
             </p>
-          </TimelineItem>
-          <TimelineItem
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
             key="003"
             dateText="1980"
             dateInnerStyle={{ background: "#333", color: "#fff" }}
@@ -85,8 +86,8 @@ class Hilevich extends Component {
               Восточном кладбище[4]. Сын — Юрий Петрович Бровка (1936—2019),
               доктор юридических наук, профессор БГУ.
             </p>
-          </TimelineItem>
-        </Timeline>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
 
         <div class="map-on-right">
           <div class="awards-creativity">
